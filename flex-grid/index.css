@@ -1,38 +1,68 @@
 /* write CSS to correspond with the descriptions above. See notes for math tips */
-.row{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    gap: 4%;
+
+@media (min-width:550px) {
+    .row{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 4%;
+    }
+
+    figure,
+    .span2{
+        flex-basis: 48%;
+    }
+
+    .span3{
+        flex-basis: 100%;
+    }
+
+    .span3-1{
+        flex-basis: 100%;
+    }
+
+    .span4{
+        flex-basis: 100%;
+    }
+
+    .span2-4{
+        flex-basis: 100%;
+    }
 }
 
-figure{
-    flex-basis: 22%;
-}
-
-.span2{
-    flex-basis: 48%;
-}
-
-.span3{
-    flex-basis: 74%;
-}
 
 
-.span4{
-    flex-basis: 100%;
-}
-
-.order-1{
-    order: 1;
-}
-
-.order-2{
-    order: 2;
-}
-
-.order-3{
-    order: 3;
+@media (min-width:800px) {
+    figure,
+    .span3-1{
+        flex-basis: 22%;
+    }
+    
+    .span2,
+    .span2-4{
+        flex-basis: 48%;
+    }
+    
+    .span3{
+        flex-basis: 74%;
+    }
+    
+    
+    .span4{
+        flex-basis: 100%;
+    }
+    
+    .order-1{
+        order: 1;
+    }
+    
+    .order-2{
+        order: 2;
+    }
+    
+    .order-3{
+        order: 3;
+    }
 }
 
 
