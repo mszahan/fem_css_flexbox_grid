@@ -3,6 +3,10 @@
   width: 600px;
   height: 600px;
   background: url(https://assets.codepen.io/296057/painting.png) no-repeat;
+  display: grid;
+  grid-template-columns: 124px 376px 42px;
+  grid-template-rows: 170px 210px 61px 61px;
+  gap: 30px 20px;
  
 }
 div {
@@ -12,24 +16,18 @@ div {
   font-family: Arial, sans-serif;
   font-size: 2rem;
 }
-.a {
 
-}
-.b {
 
-}
 .c {
+  grid-row: 1/ span 2;
+  grid-column: 2/ span 2;
 
 }
 .d {
+  grid-row: span 2;
 
 }
 .e {
+  grid-row: span 2;
 
-}
-.f {
-
-}
-.g {
-	
 }
